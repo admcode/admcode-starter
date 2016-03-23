@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "laravel/lumen": "5.2.*",
+        "sebastian/phpcpd": "*"
+    }
+}
