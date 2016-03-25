@@ -1,21 +1,84 @@
-# Lumen PHP Framework
+# AdmCode Starter Template
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+Create [PHP](http://php.net/) projects based on [ADMCode's](http://admcode.com.br/) template.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Installation
 
-## Official Documentation
+### Pre-requisites
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+You need the following installed in your environment before we begin:
 
-## Security Vulnerabilities
+- [PHP](http://php.net/) >= 5.5.9
+- The following extensions enabled in php.ini:
+	- OpenSSL PHP Extension
+	- PDO PHP Extension
+	- Mbstring PHP Extension
+- [Composer](https://getcomposer.org/)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+### Clone this repository
+
+```bash
+$ git clone https://github.com/admcode/admcode-starter.git
+$ cd admcode-starter
+```
+
+### Configure your environment file
+
+Run the `create-app-env.sh` script and follow the instructions to create a `.env` file to your project.
+```bash
+$ sh create-app-env.sh
+```
+If somehow you managed to screw up the `.env` file, just run the script again to make a new one.
+
+### PHP dependencies
+
+Install PHP dependencies through composer by running:
+
+```bash
+$ composer install
+```
+
+## Usage
+
+### Important
+
+Your project must be served from the public folder in the server root.
+
+```
+// These will work
+www.fakedomain.com/public/
+localhost/public/
+
+// These won't
+www.fakedomain.com/admcode-starter/public/
+localhost/admcode-starter/public/
+```
+
+### Change your project encryption key
+
+To change your project encryption key, run the `create-app-key.sh` and replace your previous project encryption key in the `.env` file with the key generated.
+
+```bash
+$ sh create-app-key.sh
+```
+
+## Contributing
+
+- [Fork it](fork)
+- Create your feature branch
+```bash
+$ git checkout -b my-new-feature
+```
+- Commit your changes
+```bash
+$ git commit -am 'Add some feature'
+```
+- Push to the branch
+```bash
+$ git push origin my-new-feature
+```
+- Create a new Pull Request
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+[MIT](LICENSE) © ADMCODE, unless stated otherwise.
