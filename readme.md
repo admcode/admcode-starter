@@ -1,4 +1,4 @@
-# AdmCode Starter Template
+# ADMCode Starter Template
 
 Create [PHP](http://php.net/) projects based on [ADMCode's](http://admcode.com.br/) template.
 
